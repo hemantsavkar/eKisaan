@@ -1,0 +1,75 @@
+﻿
+<div class="scrollable">
+    <div style="padding: 15px; margin-top: 3px" class="scrollable-content">
+        <!--<div class="col-xs-12">
+            <div class="col-xs-6   has-success has-feedback" >
+                <button ng-class="by=='m'?'btn btn-danger btn-block':'btn btn-info btn-block'" ng-click="changeMode('m')">
+                    <i class="fa fa-calendar fa-1x"></i>
+                    Monthly
+                </button>
+            </div>
+            <div class="col-xs-6  has-success has-feedback" style="margin-right:0px" >
+                <button ng-class="by=='y'?'btn btn-danger btn-block':'btn btn-info btn-block'" ng-click="changeMode('y')">
+                    <i class="fa fa-calendar fa-1x"></i>
+                    Yearly
+                </button>
+            </div>
+            <div class="col-xs-12 form-group  has-success has-feedback" style="margin-left: 10px; padding: 2px; margin-top: 2px; padding-right: 22px">
+                <div class="input-group margin-bottom-sm col-xs-12">
+                    <select ng-options="o.Name for o in categories" ng-model="search.category" style="line-height:15px" ng-change="loadCommodities(search.category)" class="form-control  input-sm text-right" data-rule-required="true" required focus>
+                        <option value="">--- Category ---</option>
+                    </select>
+                    <div class="btn input-group-addon" style="font-size: 15px" ng-show="loadingCategories">
+                        <i class="fa fa-spinner fa-spin fa-1x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 form-group  has-success has-feedback" style="margin-top: 2px; margin-left: 10px; padding: 2px; padding-right: 22px">
+                <div class="input-group margin-bottom-sm col-xs-12">
+                    <select ng-options="o.Name for o in commodities" ng-model="search.commodity" style="line-height: 15px;" class="form-control  input-sm text-right" data-rule-required="true" required focus>
+                        <option value="">--- Commodity ---</option>
+                    </select>
+                    <div class="btn input-group-addon" style="font-size: 11px" ng-show="loadingCommodities">
+                        
+                        <i class="fa fa-spinner fa-spin fa-1x"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 has-success has-feedback" style="margin-top:2px" ng-hide="by=='y'">
+                <select ng-options="o for o in years" ng-model="search.year" style="line-height:15px" class="form-control  input-sm text-right" data-rule-required="true" required focus>
+                    <option value="">--- Year ---</option>
+                </select>
+            </div>
+            <div ng-class="{'col-xs-6  has-success has-feedback': by=='m', 'col-xs-12  has-success has-feedback': by=='y'}" class="col-xs-6  has-success has-feedback" style="margin-top:2px">
+                <button class="btn btn-info btn-block" ng-click="loadGrapheData()" ng-disabled="!(search.year && search.commodity)">
+                    <i class="fa fa-bar-chart fa-1x"></i>
+                    Load Graph
+                </button>
+            </div>
+        </div>-->
+        <!--<div class="col-xs-2 form-group  has-success has-feedback pull-right" style="margin-top: 2px; margin-left: 10px;margin-right:22px; padding: 2px">
+           <button class="btn btn-primary btn-block" ng-hide="!hideFilters" ng-click="hideFilters=!hideFilters">
+               <i class="fa fa-filter fa-1x"></i>
+               &nbsp; Change Filters
+           </button>
+       </div>-->
+            <reportdataselection></reportdataselection>
+            <div ng-show="viewLoading" class="app-content-loading" style="background-color:transparent">
+                <i class="fa fa-spinner fa-spin loading-spinner fa-3x fa-align-center"></i>
+            </div>
+            <div class="col-xs-11" style="margin-top:5px">
+                <canvas tc-chartjs-bar chart-options="options" chart-data="data" auto-legend style="width:95%;height:90%"></canvas>
+            </div>
+</div>
+</div>
+<div class="navbar-brand" content-for="title" style="text-align: left">
+    <span>{{Title}}</span>
+</div>
+<div class="btn-group pull-left" content-for="leftnavbarAction">
+    <a ng-click="goBack()">
+        <div class="btn btn-navbar sidebar-toggle">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+    </a>
+</div>
+

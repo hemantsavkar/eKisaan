@@ -1,0 +1,79 @@
+  body {
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+
+  /*
+    Copyright (c) 2013 Ankur Sethi <contact@ankursethi.in>
+    Licensed under the terms of the MIT license.
+    See the file LICENSE for copying permissions.
+*/
+  .app-content-loading {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.loading-spinner {
+  position: absolute;
+  font-size: 50px;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+}
+
+.fullwidth {
+    display: block;
+    width: 100%;
+}
+
+.sidenav {
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.25);
+}
+
+.sidenav-wrap {
+    padding: 2em;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+.badge-hover {
+    cursor: pointer;
+}
+
+.badge-hover:hover {
+    background-color: #777777;
+}
+
+.title-buttons {
+    line-height: 40px;
+    margin: 10px 0;
+    text-align: right;
+}
+
+.sha-loading-spinner-container {
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.ng-action {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ng-action:hover {
+    text-decoration: underline;
+}
+
+.placeholder-view {
+    margin-top: 50px;
+    text-align: center;
+}

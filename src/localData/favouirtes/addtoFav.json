@@ -1,0 +1,28 @@
+﻿{
+	data:[
+	"type": "M",
+	"id": 3,
+	"useridentifier":"1111",
+	"createdOn":"31 Oct 2014",
+	"metaData": [
+	    {
+	        "stateId": "1"
+	    }
+	]
+	]
+}
+
+
+{
+	data:[
+	"type": "C",
+	"id": 3,
+	"useridentifier":"1111",
+	"createdOn":"31 Oct 2014",
+	"metaData": [
+	    {
+	        "marketId": "2"
+	    }
+	]
+	]
+}

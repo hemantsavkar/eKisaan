@@ -1,0 +1,75 @@
+{
+  "message": "success",
+  "countofcat": 2,
+  "state": "Maharashtra",
+  "district": "Nagpur",
+  "market": "Kamthi",
+  "data": [
+    {
+      "category": "Vegetables",
+      "categoryId": 1,
+      "count": "2",
+      "metaData": [
+        {
+          "image": "Vegitables_Trans.png"
+        }
+      ],
+      "comodities": [
+	   {
+          "commodity": "Pees",
+		  "id":2,
+          "maxPrice": 1500,
+          "minPrice": 1350,
+          "modalPrice": 1300,
+		  "totalArrival":5,
+          "variety": "Other",
+          "metaData": [
+            {
+              "image": "Green-Peas.png"
+            }
+          ]
+        },
+        {
+          "commodity": "Bhindi (Ladies Finger)",
+		  "id":1,
+          "maxPrice": 3000,
+          "minPrice": 4000,
+          "modalPrice": 3500,
+		  "totalArrival":13,
+          "variety": "Other",
+          "metaData": [
+            {
+              "image": "lady_fing_tr.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Cereals",
+      "categoryId": 2,
+      "count": "1",
+      "metaData": [
+        {
+          "image": "Wheat.png"
+        }
+      ],
+      "comodities": [
+        {
+          "commodity": "Wheat",
+		  "id":3,
+          "maxPrice": 5000,
+          "minPrice": 4000,
+          "modalPrice": 4500,
+		  "totalArrival":10,
+          "variety": "American",
+          "metaData": [
+            {
+              "image": "Wheat.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

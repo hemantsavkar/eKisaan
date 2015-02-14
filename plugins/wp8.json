@@ -1,0 +1,26 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"wp-package\" value=\"File\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "org.apache.cordova.file": {
+            "PACKAGE_NAME": "{ec000090-b1a9-11e4-a470-6b9814e05925}"
+        }
+    },
+    "dependent_plugins": {}
+}

@@ -1,0 +1,46 @@
+
+<div class="scrollable">
+    <div style="padding:15px" class="scrollable-content" style="margin-top:10px">
+
+        <div ng-show="viewLoading" class="app-content-loading" style="background-color:transparent">
+            <i class="fa fa-spinner fa-spin loading-spinner fa-5x fa-align-center"></i>
+        </div>
+
+        <div class="col-xs-12" style="margin-top:5px" ng-show="!viewLoading" ng-if="GroupCollection.length > 0">
+            <table style="width:100%;border-width:thin" cellpadding="2" cellspacing="5" border="0">
+                <tbody ng-repeat="item in GroupCollection">
+                    <tr>
+                        <td colspan="5" style="padding-left: 2px">
+                            <b>{{item.GraphCategory}}</b>
+                        </td>
+                    </tr>
+                    <tr ng-repeat="graph in item.Items">
+                        <td style="width: 100%; padding-left: 2px">
+                                <strong>
+                                    &nbsp;&nbsp;&nbsp; <a href="#/Graph/{{graph.Code}}">
+                                        {{graph.Description}}
+                                    </a>
+                                </strong>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-xs-12">
+            <canvas tc-chartjs-line chart-data="data" chart-options="myOptions" style="width:100%" height="250" ng-show="ShowGraphTotalSales_Flag"></canvas>
+            <!--<canvas tc-chartjs-pie chart-data="piedata" chart-options="myOptions" style="width:100%" height="250"></canvas>-->
+        </div>
+        </div>
+</div>
+    <div class="navbar-brand" content-for="title" style="text-align: left">
+        <span>{{Title}}</span>
+    </div>
+    <div class="btn-group pull-left" content-for="leftnavbarAction">
+        <a ng-click="goBack()">
+            <div class="btn btn-navbar sidebar-toggle">
+                <i class="fa fa-chevron-left"></i>
+            </div>
+        </a>
+    </div>
+

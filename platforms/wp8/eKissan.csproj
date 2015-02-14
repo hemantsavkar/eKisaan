@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3677C1B7-D68B-4CF9-BF8A-E869D437A6DF}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.eKisaan.UI</RootNamespace>
+    <AssemblyName>com.eKisaan.UI</AssemblyName>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>
+    </SilverlightVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>en-US</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>CordovaAppProj_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>com.eKisaan.UI.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <BackgroundAgentType />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;WP8</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>
+    </PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cordovalib\Commands\BaseCommand.cs" />
+    <Compile Include="cordovalib\JSON\JsonHelper.cs" />
+    <Compile Include="cordovalib\BrowserMouseHelper.cs" />
+    <Compile Include="cordovalib\CommandFactory.cs" />
+    <Compile Include="cordovalib\ConfigHandler.cs" />
+    <Compile Include="cordovalib\ConsoleHelper.cs" />
+    <Compile Include="cordovalib\CordovaCommandCall.cs" />
+    <Compile Include="cordovalib\CordovaView.xaml.cs">
+      <DependentUpon>CordovaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="cordovalib\IBrowserDecorator.cs" />
+    <Compile Include="cordovalib\ImageExifHelper.cs" />
+    <Compile Include="cordovalib\MimeTypeMapper.cs" />
+    <Compile Include="cordovalib\NativeExecution.cs" />
+    <Compile Include="cordovalib\OrientationHelper.cs" />
+    <Compile Include="cordovalib\PluginResult.cs" />
+    <Compile Include="cordovalib\ScriptCallback.cs" />
+    <Compile Include="cordovalib\XHRHelper.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="cordovalib\CordovaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml" />
+    <Content Include="www\cordova.js" />
+    <Content Include="www\cordova_plugins.js" />
+    <Content Include="www\css\app.min.css" />
+    <Content Include="www\css\hover.min.css" />
+    <Content Include="www\css\responsive.min.css" />
+    <Content Include="www\fonts\fontawesome-webfont.eot" />
+    <Content Include="www\fonts\fontawesome-webfont.svg" />
+    <Content Include="www\fonts\fontawesome-webfont.ttf" />
+    <Content Include="www\fonts\fontawesome-webfont.woff" />
+    <Content Include="www\images\assets\085.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\300x300.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\50.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\50200202i_1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\768.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\80758-06-10-05_Shaniwarwada.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\agriculture-background-green-fresh-grain-9752027.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\android_icon_96x96.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\article-page-main_ds-photo_getty_article_165_93_78364028_xs1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Beverages\Coffee.png" />
+    <Content Include="www\images\assets\Beverages\New Text Document.txt" />
+    <Content Include="www\images\assets\Blank_Market.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Cereals\1307449906015.jpg" />
+    <Content Include="www\images\assets\Cereals\bajra.png" />
+    <Content Include="www\images\assets\Cereals\bajra_250x250.jpg" />
+    <Content Include="www\images\assets\Cereals\Jowar.png" />
+    <Content Include="www\images\assets\Cereals\maize.jpg" />
+    <Content Include="www\images\assets\Cereals\maize.png" />
+    <Content Include="www\images\assets\Cereals\Thumbs.db" />
+    <Content Include="www\images\assets\Cereals\Wheat.png" />
+    <Content Include="www\images\assets\Cereals\whole-maize-500x500.jpg" />
+    <Content Include="www\images\assets\City\mumbai.jpg" />
+    <Content Include="www\images\assets\City\nasik.jpg" />
+    <Content Include="www\images\assets\City\Pune.jpg" />
+    <Content Include="www\images\assets\DrugandNarcotics\New Text Document.txt" />
+    <Content Include="www\images\assets\DrugandNarcotics\Thumbs.db" />
+    <Content Include="www\images\assets\DrugandNarcotics\tobaco.png" />
+    <Content Include="www\images\assets\DryFruits\dry-fruits.jpg" />
+    <Content Include="www\images\assets\DryFruits\dry-fruits.png" />
+    <Content Include="www\images\assets\DryFruits\New Text Document.txt" />
+    <Content Include="www\images\assets\DryFruits\Thumbs.db" />
+    <Content Include="www\images\assets\Fertilizer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Fertilizer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\FibreCrops\Cotton.png" />
+    <Content Include="www\images\assets\FibreCrops\New Text Document.txt" />
+    <Content Include="www\images\assets\FibreCrops\Thumbs.db" />
+    <Content Include="www\images\assets\Fisheries\fisheries.png" />
+    <Content Include="www\images\assets\Flowers\flo.png" />
+    <Content Include="www\images\assets\Flowers\New Text Document.txt" />
+    <Content Include="www\images\assets\Flowers\Rose.png" />
+    <Content Include="www\images\assets\Forest\Forest.png" />
+    <Content Include="www\images\assets\Forest\New Text Document.txt" />
+    <Content Include="www\images\assets\fruits\fruits.jpg" />
+    <Content Include="www\images\assets\fruits\fruits.png" />
+    <Content Include="www\images\assets\gateway-of-india-drawinghow-to-draw-gateway-of-india-tnwhbtxz.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\handshake.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Import-Export-Russia.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\kissan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\kissan_small.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\mandi.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\mandi_trans.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Medicinal\medicinal-plants-top.png" />
+    <Content Include="www\images\assets\Millets\bajra.png" />
+    <Content Include="www\images\assets\Nagpur Chaitya bhoomi 1.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\nasik.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\No_Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\No_Image_Back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\oilseeds\oilseed.png" />
+    <Content Include="www\images\assets\Other\New Text Document.txt" />
+    <Content Include="www\images\assets\Other\No_Image.png" />
+    <Content Include="www\images\assets\pesticides.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Pulses\New Text Document.txt" />
+    <Content Include="www\images\assets\Pulses\pulses.png" />
+    <Content Include="www\images\assets\Pulses\pulses_tr.png" />
+    <Content Include="www\images\assets\Spices\New Text Document.txt" />
+    <Content Include="www\images\assets\Spices\Spices.png" />
+    <Content Include="www\images\assets\Spray.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Startch\potato_trans.png" />
+    <Content Include="www\images\assets\Sugar\Sugar_cane.png" />
+    <Content Include="www\images\assets\s_handshake3_2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\template_main3.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\template_main3_ench.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Vegetables\Green-Peas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Vegetables\lady_fing_tr.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="www\images\assets\Vegetables\New Text Document.txt" />
+    <Content Include="www\images\assets\Vegetables\Vegitables_Trans.png" />
+    <Content Include="www\images\assets\Wireframe.pdf" />
+    <Content Include="www\images\icons\android\144x144.png" />
+    <Content Include="www\images\icons\android\16x16.png" />
+    <Content Include="www\images\icons\android\192x192.png" />
+    <Content Include="www\images\icons\android\24x24.png" />
+    <Content Include="www\images\icons\android\32x32.png" />
+    <Content Include="www\images\icons\android\512by512.png" />
+    <Content Include="www\images\icons\android\64x64.png" />
+    <Content Include="www\images\icons\android\96x96.png" />
+    <Content Include="www\images\icons\android\hdpi.png" />
+    <Content Include="www\images\icons\android\ldpi.png" />
+    <Content Include="www\images\icons\android\mdpi.png" />
+    <Content Include="www\images\icons\android\port_hdpi.png" />
+    <Content Include="www\images\icons\android\port_ldpi.png" />
+    <Content Include="www\images\icons\android\port_mdpi.png" />
+    <Content Include="www\images\icons\android\port_xhdpi.png" />
+    <Content Include="www\images\icons\android\xhdpi.png" />
+    <Content Include="www\images\icons\icon.png" />
+    <Content Include="www\images\template_main3_ench.jpg" />
+    <Content Include="www\index.html" />
+    <Content Include="www\js\app.min.js" />
+    <Content Include="www\js\app.min.js.map" />
+    <Content Include="www\libs\angular-datepicker\angular-datepicker.js" />
+    <Content Include="www\libs\angular-datepicker\themes\classic.css" />
+    <Content Include="www\libs\angular-datepicker\themes\classic.date.css" />
+    <Content Include="www\libs\angular-datepicker\themes\classic.time.css" />
+    <Content Include="www\libs\angular-datepicker\themes\default.css" />
+    <Content Include="www\libs\angular-datepicker\themes\default.date.css" />
+    <Content Include="www\libs\angular-datepicker\themes\default.time.css" />
+    <Content Include="www\libs\angular-datepicker\themes\rtl.css" />
+    <Content Include="www\libs\angularlocalstorage\js\angular-local-storage.min.js" />
+    <Content Include="www\libs\angularmobile\css\mobile-angular-ui-base.css" />
+    <Content Include="www\libs\angularmobile\css\mobile-angular-ui-base.min.css" />
+    <Content Include="www\libs\angularmobile\css\mobile-angular-ui-desktop.css" />
+    <Content Include="www\libs\angularmobile\css\mobile-angular-ui-desktop.min.css" />
+    <Content Include="www\libs\angularmobile\css\mobile-angular-ui-hover.css" />
+    <Content Include="www\libs\angularmobile\css\mobile-angular-ui-hover.min.css" />
+    <Content Include="www\libs\angularmobile\fonts\fontawesome-webfont.eot" />
+    <Content Include="www\libs\angularmobile\fonts\fontawesome-webfont.svg" />
+    <Content Include="www\libs\angularmobile\fonts\fontawesome-webfont.ttf" />
+    <Content Include="www\libs\angularmobile\fonts\fontawesome-webfont.woff" />
+    <Content Include="www\libs\angularmobile\fonts\FontAwesome.otf" />
+    <Content Include="www\libs\angularmobile\js\angular-touch.min.js" />
+    <Content Include="www\libs\angularmobile\js\mobile-angular-ui.js" />
+    <Content Include="www\libs\angularmobile\js\mobile-angular-ui.min.js" />
+    <Content Include="www\libs\bootbox\js\bootbox.js" />
+    <Content Include="www\libs\css\body.css" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="www\libs\jquery\191\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="www\libs\jquery\191\css\jquery-1.9.1.ui.min.css" />
+    <Content Include="www\libs\jquery\191\js\jquery-1.9.1.min.js" />
+    <Content Include="www\libs\jquery\191\js\jquery-1.9.1.ui.min.js" />
+    <Content Include="www\libs\jquery\191\js\jquery-min.map" />
+    <Content Include="www\libs\morris\css\morris.css" />
+    <Content Include="www\libs\morris\js\morris.min.js" />
+    <Content Include="www\libs\morris\js\raphael-min.js" />
+    <Content Include="www\libs\socialshare\css\angular-socialshare.css" />
+    <Content Include="www\libs\socialshare\css\angular-socialshare.min.css" />
+    <Content Include="www\libs\socialshare\js\angular-socialshare.js" />
+    <Content Include="www\libs\socialshare\js\platform.js" />
+    <Content Include="www\libs\socialshare\js\widget.js" />
+    <Content Include="www\libs\tc-graph\js\Chart.js" />
+    <Content Include="www\libs\tc-graph\js\tc-angular-chartjs.js" />
+    <Content Include="www\loadTemplate\loading.html" />
+    <Content Include="www\localdata\favouirtes\addtoFav.json" />
+    <Content Include="www\localdata\favouirtes\result.json" />
+    <Content Include="www\localdata\itemHistory\1.json" />
+    <Content Include="www\localdata\itemHistory\2.json" />
+    <Content Include="www\localdata\itemHistory\3.json" />
+    <Content Include="www\localdata\master\markets.json" />
+    <Content Include="www\localdata\master\states.json" />
+    <Content Include="www\localdata\search\result.json" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\DirectoryEntry.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\DirectoryReader.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\Entry.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\File.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileEntry.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileError.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileReader.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileSystem.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\fileSystems.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileUploadOptions.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileUploadResult.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\FileWriter.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\Flags.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\LocalFileSystem.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\Metadata.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\ProgressEvent.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\requestFileSystem.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\resolveLocalFileSystemURI.js" />
+    <Content Include="www\plugins\org.apache.cordova.file\www\wp\FileUploadOptions.js" />
+    <Content Include="Images\appbar.back.rest.png" />
+    <Content Include="Images\appbar.close.rest.png" />
+    <Content Include="Images\appbar.feature.video.rest.png" />
+    <Content Include="Images\appbar.next.rest.png" />
+    <Content Include="Images\appbar.save.rest.png" />
+    <Content Include="Images\appbar.stop.rest.png" />
+    <None Include="cordova\lib\build.js" />
+    <None Include="cordova\lib\clean.js" />
+    <None Include="cordova\lib\target-list.js" />
+    <None Include="cordova\build.bat" />
+    <None Include="cordova\clean.bat" />
+    <None Include="cordova\lib\install-device.bat" />
+    <None Include="cordova\lib\install-emulator.bat" />
+    <None Include="cordova\lib\list-devices.bat" />
+    <None Include="cordova\lib\list-emulator-images.bat" />
+    <None Include="cordova\lib\list-started-emulators.bat" />
+    <None Include="cordova\lib\start-emulator.bat" />
+    <None Include="cordova\log.bat" />
+    <None Include="cordova\run.bat" />
+    <None Include="cordova\version.bat" />
+    <Content Include="VERSION" />
+    <None Include="Properties\AppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <PropertyGroup>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Plugins\org.apache.cordova.file\File.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,110 @@
+{
+    "message": "success",
+    "countofcat": 2,
+    "data": [
+        {
+            "title": "Markets",
+            "type": 1,
+            "typedesc": "Markets",
+            "count": "3",
+            "metaData": [
+                {
+                    "image": "085.png"
+                }
+            ],
+            "items": [
+                {
+                    "marketName": "Pune",
+                    "marketid": 1466,
+					"stateid":21,
+                    "metaData": [
+                        {
+                            "image": "Pune.jpg"
+                        }
+                    ]
+                },
+                {
+                    "marketName": "Mumbai",
+                    "marketid": 1438,
+					"stateid":21,
+                    "metaData": [
+                        {
+                            "image": "mumbai.jpg"
+                        }
+                    ]
+                },
+                {
+                    "marketName": "Devala",
+                    "marketid": 1434,
+					"stateid":21,
+                    "metaData": [
+                        {
+                            "image": "nasik.jpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Comodities",
+            "type": 2,
+            "typedesc": "Comodities",
+            "count": "3",
+            "metaData": [
+                {
+                    "image": "mandi_trans.png"
+                }
+            ],
+            "comodities": [
+                {
+                    "commodity": "Wheat",
+                    "id": 1,
+					"categoryId":2,
+					"category":"Cereals",
+                    "maxPrice": 5000,
+                    "minPrice": 4000,
+                    "modalPrice": 4500,
+                    "totalArrival": 10,
+                    "variety": "American",
+                    "metaData": [
+                        {
+                            "image": "Wheat.png"
+                        }
+                    ]
+                },
+                {
+                    "commodity": "Pees",
+                    "id": 2,
+					"categoryId":1,
+					"category":"Vegetables",
+                    "maxPrice": 1500,
+                    "minPrice": 1350,
+                    "modalPrice": 1300,
+                    "totalArrival": 5,
+                    "variety": "Other",
+                    "metaData": [
+                        {
+                            "image": "Green-Peas.png"
+                        }
+                    ]
+                },
+                {
+                    "commodity": "Bhindi (Ladies Finger)",
+                    "id": 3,
+					"categoryId":1,
+					"category":"Vegetables",
+                    "maxPrice": 3000,
+                    "minPrice": 4000,
+                    "modalPrice": 3500,
+                    "totalArrival": 13,
+                    "variety": "Other",
+                    "metaData": [
+                        {
+                            "image": "lady_fing_tr.png"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

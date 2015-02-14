@@ -1,0 +1,27 @@
+﻿<div class="scrollable" ng-show="layoutOption=='blocks'">
+    <div class="col-xs-12 scrollable-content" style="margin-top:15px" category-search-menu menus="menus">
+    </div>
+</div>
+
+<div class="scrollable" ng-show="layoutOption=='list'">
+    <div class="scrollable-content">
+        <div class="list-group">
+            <a ng-repeat="item in menus" href="#/{{item.navigationToView}}" class="list-group-item" style="background-color: transparent; color: blue">
+                <img ng-src="{{item.image}}" style="height:30px;width:30px" />
+                {{ item.title }} <i class="fa fa-chevron-right pull-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="navbar-brand" content-for="title" style="text-align: left">
+    <span>{{Title}}</span>
+</div>
+<div class="btn-group pull-left" content-for="leftnavbarAction">
+    <a ng-click="goBack()">
+        <div class="btn btn-navbar sidebar-toggle">
+            <i class="fa fa-chevron-left"></i>
+        </div>
+    </a>
+</div>

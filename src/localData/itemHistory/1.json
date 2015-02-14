@@ -1,0 +1,34 @@
+﻿{
+    "message": "success",
+    "comodityid": 1,
+	"marketid":100,
+    "name": "Bhindi (Ladies Finger)",
+	"unit":"Quintal",
+    "data": [
+        {
+            "date": "17 Oct 2014",
+            "min": 1300,
+            "max": 1500
+        },
+        {
+            "date": "16 Oct 2014",
+            "min": 1222,
+            "max": 1344
+        },
+        {
+            "date": "15 Oct 2014",
+            "min": 1400,
+            "max": 1921
+        },
+        {
+            "date": "14 Oct 2014",
+            "min": 1200,
+            "max": 1250
+        },
+        {
+            "date": "13 Oct 2014",
+            "min": 1234,
+            "max": 2300
+        }
+    ]
+}
