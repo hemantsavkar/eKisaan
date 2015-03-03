@@ -1,4 +1,4 @@
-﻿var ekisaan_config = angular.module('ekisaan_languages', [])
+var ekisaan_config = angular.module('ekisaan_languages', [])
     .constant('Languages', {
         marathi: {
             TITLE: 'ईकिसान',
@@ -20,7 +20,14 @@
                 ADDTOFAVMSG: 'आपण आपल्या मनपसंत यादीत {0} जोडू इच्छित आहात का?',
                 ADDTOFAVMSGTIT: "मनपसंत यादीत जोडा",
                 REMOVETOFAVMSG: 'आपण {0} आपल्या मनपसंत यादितुन काढु इच्छिता का ?',
-                REMOVETOFAVMSGTIT: "मनपसंत यादितुन काढा"
+                REMOVETOFAVMSGTIT: "मनपसंत यादितुन काढा",
+                SEARCHTABLE:{
+                    COMMODITY:'माल',
+                    MODAL: 'सरासरी',
+                    MIN: 'किमान',
+                    MAX: 'कमाल',
+                    VARIETY: 'जात'
+                }
             },
             FAVOURITES: {
                 TITLE: 'मनपसंत',
@@ -89,7 +96,14 @@
                 ADDTOFAVMSG: 'Are you sure you want to add {0} to your Favouites list',
                 ADDTOFAVMSGTIT: "Add to Favouites",
                 REMOVETOFAVMSG: 'Are you sure you want to Remove {0}</b> from your Favouites list ?',
-                REMOVETOFAVMSGTIT: "Remove From Favouites"
+                REMOVETOFAVMSGTIT: "Remove From Favouites",
+                SEARCHTABLE:{
+                    COMMODITY:'Commodity',
+                    MODAL: 'Modal',
+                    MIN: 'Min',
+                    MAX: 'Max',
+                    VARIETY: 'Variety'
+                }
 
             },
             FAVOURITES: {

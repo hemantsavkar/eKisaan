@@ -58,4 +58,6 @@
     <gap:splash src="src\images\SplashScreenImage.jpg" />
     <preference name="SplashScreen" value="screen" />
     <access origin="*" />
+    <access launch-external="yes" origin="tel:*" />
+    <access launch-external="yes" origin="mailto:*" />
 </widget>

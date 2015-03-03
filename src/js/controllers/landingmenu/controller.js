@@ -25,7 +25,7 @@ angular.module("ekisaan.controllers.landingmenu", []).
                                       { navigationToView: "favourites", icon: "bookmark-o", title: $rootScope.language.MENU.FAVOURITES },
                                       { navigationToView: "analysis", icon: "bar-chart", title: $rootScope.language.MENU.ANALYSYS },
                                       { navigationToView: "signup", icon: "sign-in", title: $rootScope.language.MENU.REGISTER },
-                                      { navigationToView: "share", icon: "share-alt", title: $rootScope.language.MENU.SHARE },
+                                      //{ navigationToView: "share", icon: "share-alt", title: $rootScope.language.MENU.SHARE },
                                       //{ navigationToView: "transact", icon: "inr", title: "Transact" },
                                       { navigationToView: "settings", icon: "gears", title: $rootScope.language.MENU.SETTINGS },
                                       { navigationToView: "help", icon: "question", title: $rootScope.language.MENU.HELP }

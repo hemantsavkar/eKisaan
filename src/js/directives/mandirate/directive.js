@@ -8,10 +8,10 @@ angular.module("ekisaan.directives.mandirate", [])
            },
            template:
                '<div ng-repeat="menu in menus">' +
-                   '<div class="col-xs-4" style="text-align:center">' +
+                   '<div class="col-xs-6" style="text-align:center">' +
                        '<a href="#/{{menu.navigationToView}}">' +
                            '<h4>' +
-                               '<img ng-src="{{menu.image}}" style="height:60px;width:60px" />' +
+                               '<img ng-src="{{menu.image}}" style="height:80px;width:90px" />' +
                                '<br />{{menu.title}}' +
                            '</h4>' +
                        '</a>' +

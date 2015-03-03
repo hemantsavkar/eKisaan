@@ -56,5 +56,7 @@
               <splash src="src/images/icons/android/port_xhdpi1.png" density="port-xhdpi"/>
      </platform>
     
-<access origin="*" />
+    <access origin="*" />
+    <access origin="tel:*" launch-external="yes" />
+    <access origin="mailto:*" launch-external="yes" />
 </widget>

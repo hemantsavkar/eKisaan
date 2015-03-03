@@ -41,7 +41,8 @@ angular.module("ekisaan.controllers.mandirate", []).
                 $scope.viewLoading = true;
                 var date = Date.parse($rootScope.date);
                 date = $filter('date')(date, 'dd MMM yyyy');
-
+                $scope.startSearchingOp = true;
+                $rootScope.menus=[];
                 $q.all([mandirateService.getMarketList(state.Id, date)])
                .then(function (response) {
                    $rootScope.selectedmarkets = response[0];
@@ -50,6 +51,7 @@ angular.module("ekisaan.controllers.mandirate", []).
                    //}
                    $scope.loadingMarkets = false;
                    $scope.viewLoading = false;
+                    $scope.startSearchingOp = false;
                })
             }
             $scope.startSearch = function () {
@@ -187,6 +189,8 @@ angular.module("ekisaan.controllers.mandirate", []).
                     $scope.search.state = selectedState[0];
 
                     $scope.loadingMarkets = true;
+                    $scope.startSearchingOp = true;
+                    $rootScope.menus=[];
                     var date = Date.parse($rootScope.date);
                     date = $filter('date')(date, 'dd MMM yyyy');
 
@@ -201,6 +205,7 @@ angular.module("ekisaan.controllers.mandirate", []).
                                       $scope.search.market = undefined;
                                   }
                                   $scope.loadingMarkets = false;
+                                  $scope.startSearchingOp = false;
                                   if ($scope.search.market != undefined)
                                       $scope.startSearch();
                                   else
@@ -272,7 +277,8 @@ angular.module("ekisaan.controllers.mandirate", []).
                     angular.forEach(resultRow.comodities, function (comodity) {
                         comodity.navigationToView = "itemDetails?itemId=" + comodity.id + "&Name=" + comodity.commodity + "&Cat=" + catId + "&Var=" + comodity.varietyid;
                         comodity.image = comodity.metaData[0].image!=null?( "images/assets/" + comodity.metaData[0].image):( "images/assets/No_Image.png");
-                        comodity.title = comodity.commodity + " (" + comodity.variety + ")";
+                        comodity.title = comodity.commodity + "(" + comodity.variety + ")";
+                        $scope.Title
                     });
                     cmodoties = resultRow.comodities;
                 }
@@ -309,7 +315,10 @@ angular.module("ekisaan.controllers.mandirate", []).
                 }
 
             }
-
+            $scope.replacedMessage = function (orginal, add) {
+                return orginal.replace("{0}", add);
+            }
+         
             var itemDetails = {};
             var id = $routeParams.itemId;
             var catId = $routeParams.Cat;
@@ -413,6 +422,7 @@ angular.module("ekisaan.controllers.mandirate", []).
                         }
                     })
                 }
+                //$scope.itemDetails = itemDetails;
             }
             $scope.formatDate = function (date)
             {
